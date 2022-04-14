@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description"  content="Employee interests Survey form">
-        <title>Employee interests Survey form</title>
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Submit Form">
+  <title>Submit Form</title>
+</head>
+<body>
 
+<div style="text-align: center">
+  <h2>Employee interests Survey Form</h2>
+  <hr/>
 
-    <h2>Employee interests Survey form</h2>
-    <p>Enter your name</p> <input>
-    <p>Enter your department</p> <input>
-    <p>Tell us a little about yourself </p>
+  <div>
+    <label>Enter your name:</label>
+    <input>
+  </div>
+  <br>
+  <div>
+    <label>Enter your department:</label>
+    <input>
+  </div>
+  <br>
+  <div>
+    <label>Tell us a little about yourself</label>
     <textarea rows="10" cols="30"></textarea>
+  </div>
+  <br>
+  <div>
+    <label>Do you exercise at home?</label>
+    <input type="radio" name="home_radio" value="yes">
+    <label>Yes</label>
+    <input type="radio" name="home_radio" value="no">
+    <label>No</label>
+  </div>
+  <br>
 
-    <p>Do you exercise at home?</p>
-
-    <input type="radio" />  Yes
-    <input type="radio" /> No
-
-    <p>How do you like to read about your favorite topics?</p>
-
-        <input type="checkbox" />Books
-        <input type="checkbox" />Online
-        <input type="checkbox" />Phone apps
-        <input type="checkbox" />Magazines
-
-    <p>What genre of movies do you like?</p>
-
+  <div>
+    <label>How do you like to read about your favorite topics?</label>
+    <input type="checkbox" value="books">
+    <label>Books</label>
+    <input type="checkbox" value="online">
+    <label>Online</label>
+    <input type="checkbox" value="phone">
+    <label>Phone apps</label>
+    <input type="checkbox" value="magazine">
+    <label>Magazines</label>
+  </div>
+  <br>
+  <div>
+    <label>What genre of movies do you like?</label>
     <label for="movies">Choose a movies:</label>
     <select name="movies" id="movies">
-        <option value="comedy">Comedy</option>
-        <option value="horror">Horror</option>
-        <option value="action">Action</option>
-        <option value="animation">Animation</option>
-        </select>
-
-
+      <option value="comedy">Comedy</option>
+      <option value="horror">Horror</option>
+      <option value="action">Action</option>
+      <option value="animation">Animation</option>
+    </select>
+  </div>
+  <br>
+  <div>
     <input type="submit">
+  </div>
+</div>
 
-
-    </body>
+</body>
 
 </html>
